@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:nadoelo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBox x:Name="Input1" Margin="0,0,0,10"/>
+            <TextBox x:Name="Input2" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Button Content="+" Width="50" Margin="5" Click="Add_Click"/>
+                <Button Content="−" Width="50" Margin="5" Click="Subtract_Click"/>
+                <Button Content="×" Width="50" Margin="5" Click="Multiply_Click"/>
+                <Button Content="÷" Width="50" Margin="5" Click="Divide_Click"/>
+            </StackPanel>
+
+            <TextBlock x:Name="ResultText" FontSize="16"/>
+        </StackPanel>
     </Grid>
 </Window>
